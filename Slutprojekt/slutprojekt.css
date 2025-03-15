@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header, .hero, .catalog, .customization, .locator, .footer {
+    padding: 40px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.catalog-container, .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.catalog-item, .footer-item {
+    width: 30%;
+    background-color: #dcdcdc;
+    padding: 40px;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.footer {
+    background-color: #444;
+    color: white;
+}
+
+.hero {
+    min-height: 400px;
+    background-color: #e0e0e0;
+}
+
+.customization {
+    min-height: 300px;
+    background-color: #e8e8e8;
+}
+
+.locator {
+    min-height: 300px;
+    background-color: #e0e0e0;
+}
+
+.footer-container {
+    padding: 40px;
+}
+
