@@ -1,52 +1,153 @@
-body {
+/* General Styles */
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #E3EFD3; /* Light green background for the body */
+    color: #0D2B1D; /* Dark green text for contrast */
 }
 
-.header, .hero, .catalog, .customization, .locator, .footer {
-    padding: 40px;
-    margin: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+/* Header */
+.header {
+    padding: 20px;
+    background-color: #0D2B1D; /* Dark green for the header */
+    color: #E3EFD3; /* Light text for contrast */
+    border-radius: 0; /* Remove rounded corners for a sleek look */
 }
 
-.catalog-container, .footer-container {
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #AEC3B0; /* Muted green for secondary text */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 500px; /* Increased height for a more dramatic effect */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #345635; /* Deep green for the hero background */
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Catalog Section */
+.catalog {
+    padding: 40px 20px;
+    background-color: #0D2B1D; /* Darker background for the catalog */
+    color: #E3EFD3; /* Light text for contrast */
+}
+
+.catalog h2 {
+    color: #6BBF71; /* Vibrant green for headings */
+    margin-bottom: 20px;
+}
+
+.catalog-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-.catalog-item, .footer-item {
+.catalog-item {
     width: 30%;
-    background-color: #dcdcdc;
-    padding: 40px;
+    background-color: #345635; /* Dark green for catalog items */
+    padding: 20px;
     border-radius: 10px;
     min-height: 200px;
+    color: #E3EFD3; /* Light text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.footer {
-    background-color: #444;
-    color: white;
+.catalog-item:hover {
+    transform: translateY(-10px); /* Add a hover effect for interactivity */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.hero {
-    min-height: 400px;
-    background-color: #e0e0e0;
+.catalog-item video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
+.catalog-item p {
+    position: relative;
+    z-index: 2; /* Ensure text is above the video */
+    background-color: rgba(13, 43, 29, 0.7); /* Dark semi-transparent background for text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Customization Section */
 .customization {
-    min-height: 300px;
-    background-color: #e8e8e8;
+    padding: 40px 20px;
+    background-color: #6BBF71; /* Vibrant green for contrast */
+    color: #0D2B1D; /* Dark green text */
 }
 
+.customization h2 {
+    margin-bottom: 20px;
+}
+
+/* Locator Section */
 .locator {
-    min-height: 300px;
-    background-color: #e0e0e0;
+    padding: 40px 20px;
+    background-color: #345635; /* Deep green for consistency */
+    color: #E3EFD3; /* Light text for contrast */
+}
+
+.locator h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    background-color: #0D2B1D; /* Dark green for the footer */
+    color: #E3EFD3; /* Light text for contrast */
+}
+
+.footer h2 {
+    margin-bottom: 20px;
 }
 
 .footer-container {
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+.footer-item {
+    width: 30%;
+    background-color: #AEC3B0; /* Muted green for footer items */
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+    color: #0D2B1D; /* Dark green text */
+}
