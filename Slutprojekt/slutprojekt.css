@@ -1,20 +1,18 @@
-/* General Styles */
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    background-color: #E3EFD3; /* Light green background for the body */
-    color: #0D2B1D; /* Dark green text for contrast */
+    overflow-x: hidden;
+    background-color: #E3EFD3;
+    color: #0D2B1D;
 }
 
-/* Header */
 .header {
     padding: 20px;
-    background-color: #0D2B1D; /* Dark green for the header */
-    color: #E3EFD3; /* Light text for contrast */
-    border-radius: 0; /* Remove rounded corners for a sleek look */
+    background-color: #0D2B1D;
+    color: #E3EFD3;
+    border-radius: 0;
 }
 
 .header h1 {
@@ -26,18 +24,17 @@ html, body {
 .header p {
     margin: 10px 0 0;
     font-size: 1rem;
-    color: #AEC3B0; /* Muted green for secondary text */
+    color: #AEC3B0;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     width: 100vw;
-    height: 500px; /* Increased height for a more dramatic effect */
+    height: 500px;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: #345635; /* Deep green for the hero background */
+    background-color: #345635;
 }
 
 .hero video {
@@ -50,15 +47,14 @@ html, body {
     object-fit: cover;
 }
 
-/* Catalog Section */
 .catalog {
     padding: 40px 20px;
-    background-color: #0D2B1D; /* Darker background for the catalog */
-    color: #E3EFD3; /* Light text for contrast */
+    background-color: #0D2B1D;
+    color: #E3EFD3;
 }
 
 .catalog h2 {
-    color: #6BBF71; /* Vibrant green for headings */
+    color: #6BBF71;
     margin-bottom: 20px;
 }
 
@@ -70,18 +66,18 @@ html, body {
 
 .catalog-item {
     width: 30%;
-    background-color: #345635; /* Dark green for catalog items */
+    background-color: #345635;
     padding: 20px;
     border-radius: 10px;
     min-height: 200px;
-    color: #E3EFD3; /* Light text */
+    color: #E3EFD3;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
 .catalog-item:hover {
-    transform: translateY(-10px); /* Add a hover effect for interactivity */
+    transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,39 +94,36 @@ html, body {
 
 .catalog-item p {
     position: relative;
-    z-index: 2; /* Ensure text is above the video */
-    background-color: rgba(13, 43, 29, 0.7); /* Dark semi-transparent background for text */
+    z-index: 2;
+    background-color: rgba(13, 43, 29, 0.7);
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Customization Section */
 .customization {
     padding: 40px 20px;
-    background-color: #6BBF71; /* Vibrant green for contrast */
-    color: #0D2B1D; /* Dark green text */
+    background-color: #6BBF71;
+    color: #0D2B1D;
 }
 
 .customization h2 {
     margin-bottom: 20px;
 }
 
-/* Locator Section */
 .locator {
     padding: 40px 20px;
-    background-color: #345635; /* Deep green for consistency */
-    color: #E3EFD3; /* Light text for contrast */
+    background-color: #345635;
+    color: #E3EFD3;
 }
 
 .locator h2 {
     margin-bottom: 20px;
 }
 
-/* Footer */
 .footer {
     padding: 40px 20px;
-    background-color: #0D2B1D; /* Dark green for the footer */
-    color: #E3EFD3; /* Light text for contrast */
+    background-color: #0D2B1D;
+    color: #E3EFD3;
 }
 
 .footer h2 {
@@ -145,9 +138,9 @@ html, body {
 
 .footer-item {
     width: 30%;
-    background-color: #AEC3B0; /* Muted green for footer items */
+    background-color: #AEC3B0;
     padding: 20px;
     border-radius: 10px;
     min-height: 150px;
-    color: #0D2B1D; /* Dark green text */
+    color: #0D2B1D;
 }
