@@ -54,9 +54,14 @@ html, body {
 }
 
 .catalog h2 {
-    color: #6BBF71;
+    color: #a37e2c; 
     margin-bottom: 20px;
+    font-size: 2rem; 
+    font-family: 'CS Hiera Classic Font', serif;
+    font-style: italic;
+    text-align: center;
 }
+
 
 .catalog-container {
     display: flex;
@@ -92,12 +97,9 @@ html, body {
     z-index: 1;
 }
 
-.catalog-item p {
-    position: relative;
-    z-index: 2;
-    background-color: rgba(13, 43, 29, 0.7);
-    padding: 10px;
-    border-radius: 5px;
+.catalog-link {
+    text-decoration: none; 
+    color: inherit;
 }
 
 .customization {
